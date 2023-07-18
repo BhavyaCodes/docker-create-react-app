@@ -12,6 +12,10 @@ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app f50e4b8c12b336269200
 
 ignore /app/node_modules binding but bind rest (pwd = working directory address)
 
+# Docker Compose
+
+docker compose up
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
