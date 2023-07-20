@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+# before running test
+before_install:
+  - docker build -t bhavyacodes/docker-react -f Dockerfile.dev .
+
+# test script
+script:
+  - docker run -e CI=true bhavyacodes/docker-react npm run test
