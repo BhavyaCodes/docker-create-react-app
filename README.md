@@ -20,10 +20,18 @@ docker run -it 6603d31e8274e npm run test
 
 # Testing methods
 
-##### Does not
+##### Does not hot reload
 
 1. `Docker run -it sfyh3497hf npm run test` // image id
+
+##### hot reload working
+
 2. `Docker exec -it <containerid> npm run test` //
+3. using docker compose but we don't get interactivity
+
+### Running production server (default nginx port = 80)
+
+docker run -p 8080:80 52dec9af
 
 # Docker Compose
 
