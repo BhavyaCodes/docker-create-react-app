@@ -14,6 +14,8 @@ RUN npm run build
 
 FROM nginx
 
+EXPOSE 80
+
 # everything else will be deleted from first phase
 COPY --from=builder /app/build /usr/share/nginx/html
 
